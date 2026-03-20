@@ -3,7 +3,7 @@
     --violet-fonce: #534ed0;
     --ornge-vif:#FFA726;
     --gris--tres-fonce:#333;
-    --gris-fonce:#666;
+    --gris-foncé:#666;
     --gris-tres-clair:#F8F8F8;
     --gris-clair:#EEE;
 }
@@ -21,7 +21,7 @@ boby {
 
 header{
     background-color:white;
-box-shadow: 2px 6px 10px rgba(0,0,0,0.5 );    
+box-shadow: 2px 6px 10px rgba(0,0,0,0.2 );    
 position:sticky;
 top: 0;
 z-index: 100;
@@ -34,5 +34,43 @@ header div a {
     text-decoration: none;
     font-size: 2.2rem;
     font-weight: bold;
-    color: var(--violet-fonce);
+    color: var(--violet-doux);
+}
+ul li{
+    list-style: none;
+    margin: 15px;
+}
+ul{
+    display: flex;
+}
+ul li a {
+    text-decoration: none;
+    color: var(--gris-foncé);
+    font-weight: 600;
+    font-size: 1.1rem;
+    position: relative;
+    padding: 10px 0;
+}
+
+ul li a:hover{
+    color: var(--violet-doux);
+}
+ul li a::after{
+    content: '';
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    background-color: var(--violet-doux);
+    transition: width  0.3s ease;
+}
+ul li a:hover::after{
+    width: 100%;
+}
+
+a.active {
+    color: var(--violet-doux);
+}
+a.active::after{
+    width: 100%;
 }
