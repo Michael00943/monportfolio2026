@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon portfolio</title>
+    <title>Mes Passions - Celestin Michael</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="dark-theme"> <!-- Classe spéciale pour le fond sombre -->
 <header>
     <div>
-        <a href="">Mon portfolio</a>
+        <a href="index.html">Mon portfolio</a>
     </div>
     <nav>
         <ul>
             <li><a href="index .html">accueil</a></li>
-            <li><a href="projet.html"class="active plum's">projet</a></li>
+            <li><a href="projet.html"class="active">projet</a></li>
             <li><a href="passion.html">passion</a></li>
             <li><a href="divertissement.html">divertissement</a></li>
             <li><a href="contact.html">contact</a></li>
@@ -25,13 +25,127 @@
     </nav>
 </header>
 <main>
-    <h1>voici mes projets</h1>
-</main>    
+<section class="realisations">
+    <h2 class="titre-section">Mes Réalisations</h2>
+    <div class="soulignement"></div>
+
+    <div class="grille-projets">
+        <!-- Carte Projet 1 -->
+        <article class="carte">
+            <div class="image-box">
+                <img src="image/E commerce.jpg" alt="Site E-commerce">
+            </div>
+            <div class="contenu">
+                <h3>Site E-commerce</h3>
+                <p>Une boutique en ligne complète développée avec HTML, CSS et JavaScript pur.</p>
+                <div class="tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">JS</span>
+                </div>
+            </div>
+            <div class="footer-carte">
+                <a href="#"><i class="fas fa-circle-notch"></i> Code</a>
+                <a href="#"><i class="fas fa-external-link-alt"></i> Démo</a>
+            </div>
+        </article>
+        <article class="carte">
+            <div class="image-box">
+                <img src="image/gestion.jpg" alt="Gestion">
+            </div>
+            <div class="contenu">
+                <h3> gestion des taches </h3>
+                <p>Application Web pour organisser sesv projets quotidiens avec stockage local.</p>
+                <div class="tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                </div>
+            </div>
+            <div class="footer-carte">
+                <a href="#"><i class="fas fa-circle-notch"></i> Code</a>
+                <a href="#"><i class="fas fa-external-link-alt"></i> Démo</a>
+            </div>
+        </article>
+        <article class="carte">
+            <div class="image-box">
+                <img src="image/blogue.jpg" alt="Blog">
+            </div>
+            <div class="contenu">
+                <h3>Blog personnel</h3>
+                <p>Prjet en cours de migration vers Larevel pour apprendre le backeend .</p>
+                <div class="tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                </div>
+            </div>
+            <div class="footer-carte">
+                <a href="#"><i class="fas fa-circle-notch"></i> Code</a>
+                <a href="#"><i class="fas fa-external-link-alt"></i> Démo</a>
+            </div>
+        </article>
+        <article class="carte">
+            <div class="image-box">
+                <img src="image/annalyse.jpg" alt="Dashborad">
+            </div>
+            <div class="contenu">
+                <h3>Dashborad d'Analyse</h3>
+                <p>Visualisatin de donnée dynamiques avec Python et la bibliotheque Matplotlib.</p>
+                <div class="tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                </div>
+            </div>
+            <div class="footer-carte">
+                <a href="#"><i class="fas fa-circle-notch"></i> Code</a>
+                <a href="#"><i class="fas fa-external-link-alt"></i> Démo</a>
+            </div>
+        </article>
+        <article class="carte">
+            <div class="image-box">
+                <img src="image/météo.jpg" alt="Site Météo">
+            </div>
+            <div class="contenu">
+                <h3>Application Météo</h3>
+                <p>Une application utilisant une API en temp réel pour afficher ma météo mondiale.</p>
+                <div class="tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                </div>
+            </div>
+            <div class="footer-carte">
+                <a href="#"><i class="fas fa-circle-notch"></i> Code</a>
+                <a href="#"><i class="fas fa-external-link-alt"></i> Démo</a>
+            </div>
+        </article>
+        <article class="carte">
+            <div class="image-box">
+                <img src="image/maquette.jpg" alt="Maquette">
+            </div>
+            <div class="contenu">
+                <h3>Maquette Mobile UI</h3>
+                <p>Concepttion d'une intervface utilisanteur moderne pour une application de fitness</p>
+                <div class="tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                </div>
+            </div>
+            <div class="footer-carte">
+                <a href="#"><i class="fas fa-circle-notch"></i> Code</a>
+                <a href="#"><i class="fas fa-external-link-alt"></i> Démo</a>
+            </div>
+        </article>
+
+        <!-- Répète la structure ci-dessus pour les 5 autres projets (Gestionnaire, Blog, etc.) -->
+    </div>
+</section>
+</main>
 <footer>
-    <p>&copy; 2026 celestin Michael kyabu. Tous droits réservés.</p>
-    <img src="image/github.png" alt="GITHUB LOGO" width="30">
-    <img src="image/linkedin.png" alt="linkedin LOGO" width="30">
-    <img src="image/twitter.png" alt="twitter LOGO" width="30">
+    <p>&copy; 2026 Celestin Michael Kyabu. Tous droits réservés.</p>
+    <div class="footer-icons">
+        <img src="image/github.png" alt="GITHUB" width="30">
+        <img src="image/linkedin.png" alt="LINKEDIN" width="30">
+        <img src="image/twitter.png" alt="TWITTER" width="30">
+    </div>
 </footer>
 </body>
 </html>

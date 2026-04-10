@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon portfolio</title>
+    <title>Contact - Mon Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
 <header>
     <div>
-        <a href="">Mon portfolio</a>
+        <a href="index.html">Mon portfolio</a>
     </div>
     <nav>
         <ul>
@@ -20,18 +20,48 @@
             <li><a href="projet.html">projet</a></li>
             <li><a href="passion.html">passion</a></li>
             <li><a href="divertissement.html">divertissement</a></li>
-            <li><a href="contact.html"class="active plum's">contact</a></li>
+            <li><a href="contact.html" class="active">contact</a></li>
         </ul>
     </nav>
 </header>
+
 <main>
-    <h1>Contatez-vous</h1>
-</main>    
+    <section class="contact-section">
+        <h2>Me contacter</h2>
+        <p>Un projet ou une question ? N'hésitez pas à me joindre sur mes réseaux ou par mail.</p>
+        
+        <div class="contact-container">
+            <!-- Carte Email -->
+            <div class="contact-card">
+                <h3>Email</h3>
+                <p>celestin.michael@email.com</p>
+                <a href="mailto:celestin.michael@email.com" class="btn-contact">Envoyer un mail</a>
+            </div>
+
+            <!-- Carte WhatsApp -->
+            <div class="contact-card">
+                <h3>WhatsApp</h3>
+                <p>+243 976 852 256</p>
+                <a href="https://wa.me" target="_blank" class="btn-contact">Discuter sur WhatsApp</a>
+            </div>
+
+            <!-- Carte Telegram -->
+            <div class="contact-card">
+                <h3>Telegram</h3>
+                <p>@CelestinMichael</p>
+                <a href="https://t.me" target="_blank" class="btn-contact">Message Telegram</a>
+            </div>
+        </div>
+    </section>
+</main>
+
 <footer>
-    <p>&copy; 2026 celestin Michael kyabu. Tous droits réservés.</p>
-    <img src="image/github.png" alt="GITHUB LOGO" width="30">
-    <img src="image/linkedin.png" alt="linkedin LOGO" width="30">
-    <img src="image/twitter.png" alt="twitter LOGO" width="30">
+    <p>&copy; 2026 Celestin Michael Kyabu. Tous droits réservés.</p>
+    <div class="footer-icons">
+        <img src="image/github.png" alt="GITHUB" width="30">
+        <img src="image/linkedin.png" alt="LINKEDIN" width="30">
+        <img src="image/twitter.png" alt="TWITTER" width="30">
+    </div>
 </footer>
 </body>
 </html>

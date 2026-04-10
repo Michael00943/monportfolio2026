@@ -1,37 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon portfolio</title>
+    <title>Mes Passions - Celestin Michael</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="dark-theme"> <!-- Classe spéciale pour le fond sombre -->
 <header>
     <div>
-        <a href="">Mon portfolio</a>
+        <a href="index.html">Mon portfolio</a>
     </div>
     <nav>
         <ul>
             <li><a href="index .html">accueil</a></li>
             <li><a href="projet.html">projet</a></li>
-            <li><a href="passion.html"class="active plum's">passion</a></li>
+            <li><a href="passion.html" class="active">passion</a></li>
             <li><a href="divertissement.html">divertissement</a></li>
             <li><a href="contact.html">contact</a></li>
         </ul>
     </nav>
 </header>
+
 <main>
-    <h1>voici mes passions</h1>
-</main>    
+    <section class="passions-section">
+        <h2 class="lux-title">Mes Passions</h2>
+        <div class="passions-container">
+            
+            <div class="passions-card">
+                <div class="icon-box">🌐</div>
+                <h3>Le Web</h3>
+                <p>L'architecture de demain, entre esthétique et performance.</p>
+            </div>
+
+            <div class="passions-card">
+                <div class="icon-box">💻</div>
+                <h3>Le Code</h3>
+                <p>Transformer la logique pure en expériences utilisateur fluides.</p>
+            </div>
+
+            <div class="passions-card">
+                <div class="icon-box">📈</div>
+                <h3>Le Commerce</h3>
+                <p>L'art de l'échange et la psychologie derrière chaque vente.</p>
+            </div>
+
+            <div class="passions-card">
+                <div class="icon-box">💼</div>
+                <h3>Le Business</h3>
+                <p>Bâtir des structures solides et transformer des visions en empires.</p>
+            </div>
+
+            <div class="passions-card">
+                <div class="icon-box">📚</div>
+                <h3>Le Manga</h3>
+                <p>Une source d'inspiration narrative et graphique inépuisable.</p>
+            </div>
+
+            <div class="passions-card">
+                <div class="icon-box">🎵</div>
+                <h3>La Musique</h3>
+                <p>Le rythme qui définit mon workflow et ma créativité.</p>
+            </div>
+
+        </div>
+    </section>
+</main>
+
 <footer>
-    <p>&copy; 2026 celestin Michael kyabu. Tous droits réservés.</p>
-    <img src="image/github.png" alt="GITHUB LOGO" width="30">
-    <img src="image/linkedin.png" alt="linkedin LOGO" width="30">
-    <img src="image/twitter.png" alt="twitter LOGO" width="30">
+    <p>&copy; 2026 Celestin Michael Kyabu. Tous droits réservés.</p>
+    <div class="footer-icons">
+        <img src="image/github.png" alt="GITHUB" width="30">
+        <img src="image/linkedin.png" alt="LINKEDIN" width="30">
+        <img src="image/twitter.png" alt="TWITTER" width="30">
+    </div>
 </footer>
 </body>
 </html>

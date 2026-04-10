@@ -216,3 +216,500 @@ footer a:hover{
     color: var(--ornge-vif);
     transform: translateY(-3px);
 }
+
+    
+
+    /* --- Page Contact --- */
+.contact-section {
+    max-width: 1000px;
+    margin: 6rem auto;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+
+.contact-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    flex: 1;
+    min-width: 280px;
+    transition: transform 0.3s ease;
+    border: 1px solid var(--gris-clair);
+}
+
+.contact-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--violet-doux);
+}
+
+.contact-card h3 {
+    color: var(--violet-doux);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.contact-card p {
+    color: var(--gris-foncé);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+.btn-contact {
+    text-decoration: none;
+    background-color: var(--violet-doux);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    display: inline-block;
+    transition: background 0.3s ease;
+}
+
+.btn-contact:hover {
+    background-color: var(--violet-fonce);
+}
+
+/* Correction Footer pour les images */
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+
+
+
+/* --- Page Divertissement --- */
+.hobbies-section {
+    max-width: 1200px;
+    margin: 5rem auto;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.subtitle {
+    color: var(--gris-foncé);
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+}
+
+.hobbies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 5rem;
+}
+
+.hobby-card {
+    position: relative;
+    height: 350px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: var(--gris-tres-clair);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.hobby-card:hover {
+    transform: scale(1.03);
+}
+
+.hobby-image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s ease;
+}
+
+/* Couleurs de fallback ou images à ajouter dans ton dossier image/ */
+.football { background-color: #2ecc71; /* Remplacer par image: url('../image/foot.jpg') */ }
+.musique { background-color: #9b59b6; }
+.jeux { background-color: #34495e; }
+.code { background-color: #2c3e50; }
+.manga { background-color: #e74c3c; }
+
+.hobby-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    color: white;
+    text-align: left;
+    transform: translateY(20px);
+    transition: transform 0.3s ease;
+}
+
+.hobby-card:hover .hobby-content {
+    transform: translateY(0);
+}
+
+.hobby-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: var(--ornge-vif);
+}
+
+.hobby-content p {
+    font-size: 0.95rem;
+    opacity: 0.9;
+    color: white;
+}
+
+
+
+/* --- Couleurs de Luxe --- */
+:root {
+    --gold-gradient: linear-gradient(135deg, #D4AF37 0%, #FFD700 100%);
+    --dark-bg: #0F0F12;
+    --glass-bg: rgba(255, 255, 255, 0.03);
+    --border-glass: rgba(255, 255, 255, 0.1);
+}
+
+/* Thème sombre pour cette page spécifique */
+.dark-theme {
+    background-color:rgba(246, 244, 244, 0.904);
+}
+
+.passions-section {
+    max-width: 1100px;
+    margin: 8rem auto;
+    padding: 0 2rem;
+}
+
+.lux-title {
+    color: #195fc2bf;
+    font-size: 3.5rem;
+    margin-bottom: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.passions-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+}
+
+.passions-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--border-glass);
+    padding: 3rem 2rem;
+    border-radius: 24px;
+    text-align: center;
+    transition: all 0.4s ease;
+}
+
+.passions-card:hover {
+    background: rgba(255, 255, 255, 0.07);
+    border-color: #6C63FF;
+    transform: translateY(-15px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.icon-box {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+    padding: 20px;
+    background: rgba(108, 99, 255, 0.1);
+    border-radius: 50%;
+}
+
+.passions-card h3 {
+    color: #4e60a9;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.passions-card p {
+    color: #2f1dba;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+/* Modification du footer pour le thème sombre */
+.dark-theme footer {
+    background-color: rgba(0,0,0,0.3) !important;
+    border-top: 1px solid var(--border-glass);
+}
+
+
+
+
+:root {
+    --primary-color: #6366f1; /* Indigo moderne */
+    --bg-gradient: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    --card-bg: rgba(255, 255, 255, 0.8);
+    --glass-border: rgba(255, 255, 255, 0.4);
+    --shadow-premium: 0 20px 40px rgba(0, 0, 0, 0.05);
+    --transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.projets-container {
+    padding: 80px 5%;
+    background: var(--bg-gradient);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #1e293b;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.projets-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* La Carte Premium */
+.card-premium {
+    background: var(--card-bg);
+    backdrop-filter: blur(10px); /* Effet de verre */
+    border: 1px solid var(--glass-border);
+    border-radius: 24px;
+    overflow: hidden;
+    transition: var(--transition);
+    box-shadow: var(--shadow-premium);
+    position: relative;
+}
+
+.card-premium:hover {
+    transform: translateY(-15px) scale(1.02);
+    box-shadow: 0 30px 60px rgba(99, 102, 241, 0.15);
+    border-color: var(--primary-color);
+}
+
+/* Image et Overlay */
+.card-image {
+    position: relative;
+    height: 220px;
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.card-premium:hover .card-image img {
+    transform: scale(1.1);
+}
+
+.card-overlay {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.status {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 5px 12px;
+    border-radius: 50px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--primary-color);
+}
+
+/* Contenu */
+.card-content {
+    padding: 25px;
+}
+
+.card-tags {
+    margin-bottom: 15px;
+}
+
+.card-tags span {
+    font-size: 0.7rem;
+    padding: 4px 12px;
+    background: #f1f5f9;
+    border-radius: 8px;
+    color: #64748b;
+    margin-right: 8px;
+    font-weight: 600;
+}
+
+.card-content h3 {
+    font-size: 1.4rem;
+    color: #0f172a;
+    margin-bottom: 12px;
+}
+
+.card-content p {
+    color: #64748b;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* Boutons */
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #f1f5f9;
+    padding-top: 20px;
+}
+
+.btn-link {
+    text-decoration: none;
+    color: #1e293b;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+.btn-link:hover {
+    color: var(--primary-color);
+}
+
+.btn-link.demo {
+    color: var(--primary-color);
+    background: #eef2ff;
+    padding: 8px 16px;
+    border-radius: 12px;
+}
+
+.btn-link.demo:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+
+
+:root {
+    --couleur-primaire: #6c63ff; /* Le bleu/violet de ton titre */
+    --texte-gris: #777;
+    --fond-leger: #f9f9f9;
+    --ombre: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.realisations {
+    padding: 60px 10%;
+    text-align: center;
+    background-color: #fff;
+}
+
+.titre-section {
+    font-size: 2.2rem;
+    color: var(--couleur-primaire);
+    margin-bottom: 10px;
+}
+
+.soulignement {
+    width: 50px;
+    height: 4px;
+    background: var(--couleur-primaire);
+    margin: 0 auto 50px;
+    border-radius: 2px;
+}
+
+.grille-projets {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* Style de la Carte */
+.carte {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--ombre);
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    transition: transform 0.3s ease;
+    border: 1px solid #eee;
+}
+
+.carte:hover {
+    transform: translateY(-5px);
+}
+
+.image-box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.contenu {
+    padding: 25px;
+    flex-grow: 1;
+}
+
+.contenu h3 {
+    color: var(--couleur-primaire);
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.contenu p {
+    color: var(--texte-gris);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Tags Technos */
+.tags {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.tag {
+    background: #f0f0ff;
+    color: #888;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+/* Footer avec liens */
+.footer-carte {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 25px;
+    border-top: 1px solid #f0f0f0;
+}
+
+.footer-carte a {
+    text-decoration: none;
+    color: #333;
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-carte a:hover {
+    color: var(--couleur-primaire);
+}
